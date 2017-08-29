@@ -1,0 +1,39 @@
+AWS-CloudFront Concept:
+-----------------------
+
+1.AWS CloudFront:  
+-----------------
+                 Amazon CloudFront is a global content delivery network (CDN) service. It integrates with other Amazon Web Services products to give developers and businesses an easy way to distribute content to end users with low latency, high data transfer speeds, and no minimum usage commitments.
+
+
+
+       1.When we are doing for AWS-cloudFront firsly,we have to create one simple strorage bucket(s3).i.e (polabucket)
+       2.Upload images or files into the s3.
+       3.Then We go for AWS-cloudFront topic and create distributions...it's atomatically shows the content of s3.
+       4.Select The content of s3.
+         Origin Domain Name :polabucket.s3.amazonaws.com
+               origin id automaticaly created(S3-polabucket).
+       5.Then crete distribution.
+       6.Now it's Created..
+
+
+      7.Now wrote one html file and copied the data into the corresponding html file i.e,
+       ie. output.html file
+       
+<html>
+<head>My CloudFront Test</head>
+<body>
+<p>My text content goes here.</p>
+<p><img src="http://polabucket.s3.amazonaws.com/home-off.jpg" alt="my test image"/>
+                     /  (Origin Domain Name)  /  (Image or file name)
+
+</body>
+</html>
+     8.Now open the output.html file it shows the corrent inforamtaion of the s3 file..
+           Now we can use any wher in this file..
+------------------------------------------------------------CLOUD-FRONT---------------------------------------------------------------------------------
+
+   
+
+
+        
