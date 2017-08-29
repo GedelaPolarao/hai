@@ -1,2 +1,7 @@
 pola
 mohit
+google
+oracle
+amazon
+siva
+simha
